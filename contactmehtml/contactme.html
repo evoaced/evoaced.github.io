@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me </title>
+
+</head>
+<<style>
+*{font-size: 18px;
+font-family:verdana,geneva,Tahoma,
+}
+
+body{
+    background-color:gray
+}
+
+input{ width: 250px;}
+textarea { width: 250px;}
+
+form{min-width:550; margin-bottom: 20px;}
+.flwlbl {font weight: normal;}
+#flwupy, #flwupn{margin-right: -100px; }
+#flwupy{ margin left: -125px; }
+input, textarea { max-width: 250px; }
+textarea { min-width: 250px; min-height: 50px;}
+label { font-weight: bold; }
+body{ background-color: #666}
+#fdiv{ background-color: #ccc;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    margin:8 auto;
+    /* 30 top/bot, 15 1/r */ 
+}
+
+   
+
+
+</style>
+
+
+
+<body>
+    <h1 style="font-size: 28px;">Contact me</h1>
+    <form action="#" method="post" style="text" >
+    <label for="myname">name: </label>
+    <input type="text" name="myname" id="myname" required/>
+    
+    <label for="subject">Subject: </label>
+     <input type="text" name="subject" id="subject" placeholder="cs 101" required/>
+     
+
+     <textarea name="tbody" id="tbody" required>
+     Enter message....
+     
+     
+     </textarea>
+
+
+     <label for="priority"> <span class="rqd">*</span></label><br/>
+
+
+     <br><span class="rqd">*</span>
+
+     <label for="attach">Attachments: </label>
+     <input type ="file" name="attach" id="attach"/>
+
+     <input type="submit" name="submit" id="sbutton">
+       <select name="priority" id="priority">
+       <option disabled selected value>-- Select an option
+       <option value="low">low</option>
+       <option value="med">med</option>
+       <option value="high">high</option>
+       <option value="critical">critical</option>
+       </select><br/><br/>
+
+       <input type="radio" name="flwup" value="yes"/>yes
+        <input type="radio" name="flwup" value="no"/>no
+        <br/><br/>
+        <br><input type="submit" value="submit" />
+        
+
+
+    </form>
+    
+</body>
+</html>
