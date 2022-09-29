@@ -8,5 +8,10 @@
 </head>
 <body>
     
-</body>
+</body>background-color: grey
+border-radious: 3px;
+width: 50%;
+text-align: center;
+/*30 top/bot. 
+}
 </html>
