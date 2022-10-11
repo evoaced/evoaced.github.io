@@ -15,25 +15,38 @@
             <th scope="col">video</th>
 
             
-        <tr><th colspan="row"></th></tr>
-        <tr><th colspan="row"></th></tr>
-        <tr><th colspan="row"></th></tr>
-        <tr><th colspan="row"></th></tr>
-        <tr><th colspan="row"></th></tr>
-        
+        <tr><th colspan="row"><img src="pic5.jpg"></th></tr>
+        <tr><th colspan="row"><img src="pic4.jpg"></th></tr>
+        <tr><th colspan="row"><img src="pic3.jpg"></th></tr>
+        <tr><th colspan="row"><img src="pic2.jpg"></th></tr>
+        <tr><th colspan="row"><img src="pic.jpg"></th></tr>
+    
        
         </tr>
         
     </thead>
+    
+
+
     <style>
         table, td, th {border: 2px solid black;
         width:auto }
-        th{ background-color: #91c236}
+        th{ background-color: #b3945a}
 
-        th {width:175px}
+        th {width:175px; font-style
+        }
+
+        img{ width:125px}
         
-        
+        body{background: linear-gradient(#ce402d,#1a9658);
+    background-size:100% 350%;}
+
+    
+
+    
         
     </style>
+
+    
 </body>
 </html>
