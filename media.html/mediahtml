@@ -10,21 +10,37 @@
     <table>
         <thead>
         <tr>
+            <th scope="col">image</th>
             <th scope="col">audio</th>
-            <th scope="col">images</th>
             <th scope="col">video</th>
-
-            
-        <tr><th colspan="row"><img src="pic5.jpg"></th></tr>
-        <tr><th colspan="row"><img src="pic4.jpg"></th></tr>
-        <tr><th colspan="row"><img src="pic3.jpg"></th></tr>
-        <tr><th colspan="row"><img src="pic2.jpg"></th></tr>
-        <tr><th colspan="row"><img src="pic.jpg"></th></tr>
-    
-       
         </tr>
+        <tr>
+            <td scope="col"><img src="pic.jpg"></td>
+            <td scope="col"><audio src="aud4.mp3"></audio></td>
+            <td scope="col"><video src="video.mp4"></video></td>
+        </tr>        <tr>
+            <td scope="col"><img src="pic2.jpg"></td></td>
+            <td scope="col"><audio src="aud5.mp3"></audio></td>
+            <td scope="col"><video src="video2.mp4"></video></th>
+        </tr>        <tr>
+            <td scope="col"><img src="pic3.jpg"></td></td>
+            <td scope="col"><audio src="aud3.mp3"></audio></td>
+            <td scope="col"><video src="video3.mp4"></video></td>
+        </tr>        <tr>
+            <td scope="col"><img src="pic4.jpg"></td></td>
+            <td scope="col"><audio src="aud2.mp3"></audio></td>
+            <td scope="col"><video src="video4.mp4"></video></td>
+        </tr>
+                <tr>
+            <td scope="col"><img src="pic5.jpg"></td></td>
+            <td scope="col"><audio src="aud1.mp3"></audio></td>
+            <td scope="col"><video src="video.mp4"></video></td>
+        </tr>
+            
+    
         
     </thead>
+
     
 
 
@@ -41,12 +57,29 @@
         body{background: linear-gradient(#ce402d,#1a9658);
     background-size:100% 350%;}
 
+    VIDEO { width:175px}
+
     
 
     
         
     </style>
 
+    <h3>the pages that were used were
+        <div>
+            https://mixkit.co/free-stock-music/
+            <div>
+
+            </div>
+            https://mixkit.co/free-stock-video/
+            <div>
+                
+            </div>
+            https://unsplash.com/
+        </div>
+    </h3>
+
     
 </body>
+
 </html>
