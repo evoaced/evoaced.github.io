@@ -5,11 +5,93 @@ body {
 	background-color: #FFFFFF;
 }
 
+header p{
+	margin-bottom: 4em;
+	padding-top: 1.5em;
+}
+
+nav li{
+	display: inline;
+	float:left;
+	margin-left:1%;
+	margin-right: 1%;
+	padding-left: 0;
+	padding-right: 0;
+	width: 23%
+}
+nav{
+	margin-top: -5em;
+}
+
+nav ul{
+	 margin: 0;
+	 padding-left:0.50%;
+	 padding-right: 0.50%;
+
+}
+
+nav li {
+	background-color:#FFFFFF;
+	border-radius: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	width: 18%;
+
+}
+
+nav li a{
+	color: #FF6600;
+	display: inline-block ;
+	padding: 0.7em;
+	font-size: 1.25em;
+}
+
+nav li a:link{
+	color: #4c1f00
+}
+
+nav li a:hover{
+	color:#4c1f00;
+	font-style: italic;
+
+}
+
+main{
+	border: none;
+	border-radius: 1em;
+	box-shadow: 1em 1em 1em #3331400;
+	margin-top: 1em;
+}
+
+.mobile{
+	display:none;
+
+
+}
+
+@media screen and (max-width: 600px) {
+	nav li {
+		display:block;
+		margin:0.3em;
+		padding:0.4;
+		font-size: 16px;
+	}
+}
+
+nav li {
+	background-color:#FF6600;
+	
+
+}
+
+
+
 /* Styles for Mobile Layout */
 
 /* Style for the container centers the page and specifies the width */
 #container {
-	width: 100%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -41,6 +123,12 @@ main {
 	padding: 0.5em;
 	border-top: solid 0.2em #FF6600; 
 	border-bottom: solid 0.2em #FF6600;
+}
+
+main{
+	clear: left;
+	margin-top: 12em;
+
 }
 
 /* Style for the footer specifies font size, text alignment, and top margin */
