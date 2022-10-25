@@ -17,10 +17,17 @@ text-align: center;
     background-color: #c5a98b;
 padding: 10px;}
 
-img {float: left;}
+img {float: left;
+margin-right: 3%}
 
 ul { 
     list-style-type: none;
 }
+
+#main {
+    clear:both;
+}
+
+
 
 
