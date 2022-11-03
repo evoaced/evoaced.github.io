@@ -1,6 +1,3 @@
-td{}
-
-html{background-color:;}
-
-body{background: linear-gradient(#7c8294,#dee7e3);
-    background-size:100% 350%;}
+td{
+    text-align:center
+}
