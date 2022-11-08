@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+
+    <style>
+        a:link { /* link that hasn't been visited*/
+    color: green;
+text-decoration: none;
+padding: 10px;}
+
+a:hover {
+    color:blue;
+    text-decoration:underline;
+    background-color:gray;
+}
+
+a:visited{color: black;}
+a:active{color:red;}
+a::selection{background:pink;}
+a::-moz-selection{background:pink;}
+
+input {
+    padding:6px 12px 6px 12px;
+    border:2px solid purple;
+    color:blue;
+}
+input[type=text]{color:purple;}
+input[type=text]:focus {color:purple; border:5px solid pink;}
+input[type=submit]:hover { background-color:yellow;}
+input[type=submit]:active { background-color:chocolate;}
+
+img{border: 3px solid transparent;}
+img:hover { border: 3px solid red;}
+
+    </style>
+</head>
+<body>
+    <a href="#">link 1</a>
+    <a href="#">link 2</a>
+    <a href="#">link 3</a>
+
+    <br/><br>
+
+    <input type="text" placeholder="some text" />
+    <input type="submit" value="submit" />
+    <br/> <br>
+
+    <img src="https:picsum.photos/200" alt="placeholder">
+    <img src="https:picsum.photos/id/1/200" alt="placeholder 2">
+    <img src="https:picsum.photos/id/10/200" alt="placeholder 3">
+</body>
+</html>
