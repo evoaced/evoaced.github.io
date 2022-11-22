@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>prog76a</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer>-->
+</head>
+<body>
+    <label for="num">enter a number between 1 and 9 (inclusive): </label>
+    <input type="number" id="num" name="num">
+    <button onclick="surprise();">calculate</button>
+    <p id="out"></p>
+    <script>
+        function surprise() {      // if (something && anotherthing are BOTH true) [AND]
+        // if (something else is true or both) [or]
+        var num = document.getElementById("num").value;
+        num = Number(num);
+        var p = document.getElementById("out");
+        p.innerHTML = "";
+        if(num >= 1 && num <= 9) {
+        var num9 = num * 9;
+        p.innerHTML += num + "<br/>";
+        p.innerHTML += "x" + 9 + "<br/>";
+        p.innerHTML +="________";
+        p.innerHTML += num9 + "<br/>";
+
+        } else { // Otherwise...
+           alert("Number must be between 1 and 9!")
+        }}
+
+    </script>
+</body>
+</html>
