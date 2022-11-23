@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>gradebook calculator</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer>-->
+</head>
+<body>
+    <p>enter grade as a whole percent (e.g., 90%):</p>
+    <input type="number" id="grade" name="grade">
+    <button onclick="getGrade()">calculate</button>
+
+    <script>
+        function getGrade() {
+            var prct = Number(document.getElementById("grade").value);
+            var grade = "";
+            if(grade >= 90) {
+                grade ="A";
+            } else if(prct >= 80 && prct < 90) {
+                grade ="B";
+            } else if(prct >= 70 && prct <80)
+            if(grade >= 90) {
+                grade ="C";
+            } else if(prct >= 60 && prct < 70) {
+                grade ="D";
+            } else {
+                grade ="F"
+            }
+            alert("your grade is a (n) " + grade);
+                
+  
+        }
+    </script>
+    
+</body>
+</html>
