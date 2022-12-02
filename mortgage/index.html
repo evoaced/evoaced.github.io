@@ -11,28 +11,51 @@
     <!--<script src="js/script.js" defer>-->
 </head>
 <body>
-    <label for="input1">principal:</label>
+    <label for="num1">principal:</label>
     <input type="number" id="num1" name="num1">
     <div></div>
-    <label for="input2">interest rate as %(e.g.7.9)</label>
+    <label for="num2">interest rate as %(e.g.7.9)</label>
     <input type="number" id="num2" name="num2">
     <div></div>
-    <label for="input3">Number of years</label>
+    <label for="num3">Number of years</label>
     <input type="number" id="num3" name="num3">
     <div></div>
-    <label for="input4">monthly payment</label>
+    <label for="num4">monthly payment</label>
     <input type="number" id="num4" name="num4">
     <div></div>
     <button type="calculate">calculate</button>
-    <button type="calculate">reset</button>
+    <button type="reset">reset</button>
     <p id="out"></p>
+
     <script>
-        var out = "";
-        var lcv = 1; 
-        while (lcv)
+        function reset() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var num3 = document.getElementById("num3").value;
+        var num4 = document.getElementById("num4").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+            num3 = Number(num3);
+            num4 = Number(num4);
+    
+
+            var principal = num1 ** num2
+            var interestrate = num2 ** num3
+            var numberofyears = num3 ** num4
+            var monthlypayment = num4 ** num1
+            
+            var
+        }
+      
       
 
         
     </script>
+    <main>
+        <section></section>
+        
+    </main>
+
+
 </body>
 </html>
