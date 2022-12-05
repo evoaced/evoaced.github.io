@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="len">Length</label>
+    <input type="number" id="len" name="len" placeholder="0" required>
+
+    <label for="wid">width</label>
+    <input type="number" id="wid" name="wid" placeholder="0" required>
+
+    <button onclick="calc()">calculate</button>
+    <button onclick="reset()">clear</button>
+
+    <p id="out" style="background-color:aqua; padding: 15;"></p>
+
+    <script>
+        function reset() {
+            document.getElementById("len").value = "";
+            document.getElementById("wid").value = "";
+            document.getElementById("out").innerHTML = "";
+        }
+
+        function getArea(length, width) {
+            return length * width;
+            //var aarea = length * width;
+            //return area;
+        }
+        
+        function getPerim(length, width) {
+            var perim = 2 * length + 2 * width;
+            return perim;
+            //return 2 * length + 2 *width;
+        }
+
+        function calc() {
+            var len = Number(document.getElementById("len").value);
+            var wid = Number(document.getElementById("wid").value);
+            var area = getArea(lem, wid);
+            var perim = getPerim(len, wid);
+            document.getElementById("out").innerHTML = 
+            "Area: " + area + "<br/>Perimeter: ";
+        }
+    </script>
+    
+</body>
+</html>
