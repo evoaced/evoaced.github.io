@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> calculator</title>
+</head>
+<body>
+    <input type="number" id="num1" name="num1">
+    <select id="operand" name="operand">
+        <option disabled select value>--select an option--</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">MOD</option>
+        <option value="**">^</option>
+    </select>
+    <input type="number" id="num2" name="num2">
+    <button onclick="run()">calculate</button>
+    <p id="output" style="background: palegreen;"></p>
+    <script>
+        function run() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num1 = Number(document.getElementById("num2").value);
+            var op = document.getElementById("operand").value;
+            var result = 0;
+
+            switch (op) {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2
+                    break;
+                case "*":
+                    result = num1 * num2
+                    break;
+                case "/":
+                    result = num1 / num2
+                    break;
+                case "%":
+                    result = num1 % num2
+                    break;
+                case "**":
+                    result = num1 ** num2
+                     break;
+                     default:
+                        document.getElementById("output").innerHTML 
+                             "invalid option selected!";
+                             return;
+            }
+            document.getElementById("output").innerHTML = 
+            num1 + " " + op + " " + num2 + " = " + result;
+        }
+    </script>
+</body>
+</html>
