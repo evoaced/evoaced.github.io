@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog52a with classes</title>
+</head>
+<body>
+    <script>
+        function randInt(max, min) {
+            return Math.round(Math.random() * max + min);
+        }
+
+        class Shape {
+            constructor(len, wid) {
+                this.length = len;
+                this.width = wid;
+                this.area = 0;
+                this.perim = 0;
+            }
+
+            calc() {
+                this.area = this.length * this.length;
+                this.perim = 2 * this.length + 2 * this.width;
+            }
+
+            getArea() { return this.area;}
+            getPerim() { return this.perim;}
+            
+        }
+        var len = randInt(1, 20);
+        var wid = randInt(1, 20);
+        var shape = new Shape(len, wid);
+        shape.calc();
+        document.write("area: " + shape.getarea() + "<br/>")
+        document.write("perimeter: " + shape.getPerim() + "<br/>")
+
+    </script>
+</body>
+</html>

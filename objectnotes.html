@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note on Object in JS</title>
+</head>
+<body>
+    <script>
+        var hotel = {
+            name: "holiday inn",
+            rooms: 50,
+            booked: 30,
+            checkAvailable: function() {
+                return this.rooms - this.booked;
+            }
+        };
+
+        document.write(hotel["name"] + "<br/>");
+        document.write(hotel.name + "<br/>");
+        document.write("rooms: " + hotel.rooms "<br/>");
+        document.write("Available: " + hotel.checkAvailable() "<br/>");
+
+        function Hotel(name, rooms, booked) {
+            this.name = name;
+            this.rooms = rooms;
+            this.booked = booked;
+            this.checkAvailable = function(){
+                return this.rooms - this.booked;
+            };
+        }
+        
+        var hotel2 = new Hotel("microtel", 25, 5);
+        document.write("name: " +hotel2.name + "<br/>");
+        documents.write("rooms available: " + hotel2.checkAvailable() + "<br/>")
+
+
+        class hotel2 {
+            constructor(name, rooms, booked) {
+                this.name = name;
+                this.rooms = rooms;
+                this.booked = booked;
+
+            }
+
+            checkAvailable() {
+                return this.rooms - this.booked;
+            }
+        }
+
+        var hotel3 = new Hotel2("super 8", 30, 2);
+        document.write("Name: " + hotel3.name + "<br/>");
+        document.write("rooms available: " hotel3.checkAvailable() + "<br/>");
+
+    </script>
+    
+</body>
+</html>
