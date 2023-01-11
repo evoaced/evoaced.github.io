@@ -18,12 +18,13 @@
         <option value="**">^</option>
     </select>
     <input type="number" id="num2" name="num2">
-    <button onclick="run()">calculate</button>
+    <button onclick="run()">Calculate</button>
     <p id="output" style="background: palegreen;"></p>
+
     <script>
         function run() {
             var num1 = Number(document.getElementById("num1").value);
-            var num1 = Number(document.getElementById("num2").value);
+            var num2 = Number(document.getElementById("num2").value);
             var op = document.getElementById("operand").value;
             var result = 0;
 
@@ -32,19 +33,19 @@
                     result = num1 + num2;
                     break;
                 case "-":
-                    result = num1 - num2
+                    result = num1 - num2;
                     break;
                 case "*":
-                    result = num1 * num2
+                    result = num1 * num2;
                     break;
                 case "/":
-                    result = num1 / num2
+                    result = num1 / num2;
                     break;
                 case "%":
-                    result = num1 % num2
+                    result = num1 % num2;
                     break;
                 case "**":
-                    result = num1 ** num2
+                    result = num1 ** num2;
                      break;
                      default:
                         document.getElementById("output").innerHTML 
