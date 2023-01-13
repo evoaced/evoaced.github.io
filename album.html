@@ -10,11 +10,11 @@
 <body style="background: black;">
     <script>
         var gap=10;
-var cirNum = 40;
+var cirNum = 50;
 var cirSize= 20;
 var angle = 0;
 var ptNum = 100;
-var rectSize = 600;
+var rectSize = 650;
 //move mouse left- rotate counterclockwise
 //move mouse right - rotate clockwise
 
@@ -32,15 +32,15 @@ function draw() {
   noCursor(); //hide mouse
   noStroke(); //disable drawing outline
   fill('white');
-  circle(mouseX, mouseY, 5);
+  circle(mouseX, mouseY, 10);
   
   //main graph
   push();
-  translate(width/2, height/2);
+  translate(width/2, height/2,);
   rotate(angle);
   angle += map(mouseX, 0, width, -0.1, 0.1);
   noFill();
-  stroke('white');
+  stroke('darkred');
   strokeWeight(1);
   for(var i = 0; i < cirNum; i++ ) {
     arc(0, 0, cirSize + gap * i, cirSize + gap * i,
@@ -53,20 +53,20 @@ function draw() {
   noStroke();
   textFont('Arial');
   textAlign(CENTER, CENTER);
-  text ("Album Title Here", 0, 0)
-  textSize(8);
-  text("This is a demo", 0, 20);
+  text ("A mi", 1, 1,)
+  textSize(9);
+  text("Rels b", 0, 20);
   pop();
   
   push();
   translate(width/2, height/2);
   noFill();
-  stroke('White');
+  stroke('white');
   strokeWeight('2');
   rectMode(CENTER);
   rect(0, 0, rectSize, rectSize);
   
-  stroke('White');
+  stroke('white');
   strokeWeight(1);
   for(var i = 0 ; i < ptNum; i++) {
     point(random(-rectSize/2, rectSize/2)),
