@@ -1,1 +1,10 @@
-p{ color: blue;}
+table, td, th {border: 2px solid black;
+    width:auto }
+    th{ background-color: #b3945a}
+
+    th {width:175px; font-style
+    }
+
+    
+    body{background: linear-gradient(#614d4a,#c71835);
+background-size:100% 350%;}
